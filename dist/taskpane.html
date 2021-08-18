@@ -1,0 +1,114 @@
+<!--***********************************************************************************************************
+ CONFIDENTIAL
+
+ COPYRIGHT 2018 - 2021
+ Enscape Solutions, LLC DBA BlueCube Energy
+ All Rights Reserved
+
+ NOTICE:  All information contained herein is, and remains the property of Enscape Solutions. 
+ The intellectual and technical concepts contained herein are proprietary to Enscape Solutions
+ and are protected by trade secret or copyright law. Dissemination of this information or
+ reproduction of this material is strictly prohibited unless prior written permission is obtained
+ from Enscape Solutions.
+
+ Included third party assets:
+ Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License.
+ 
+ CONFIDENTIAL
+*********************************************************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blue Cube Add-in</title>
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"
+    />
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+
+    <!-- Load the Office JavaScript APIs -->
+    <script src="https://appsforoffice.microsoft.com/lib/beta/hosted/office.js" type="text/javascript"></script>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="ms-bgColor-neutralLighter ms-u-fadeIn500">
+    <main class="ms-firstrun-instructionstep">
+      <div id="divSignIn" class="ms-firstrun-instructionstep__welcome-body">
+        <div class="ms-welcome__main">
+          <span id="spanUsername"
+            ><label for="name"><b>Username:</b></label> <input id="inputUserName" type="text"
+          /></span>
+          <span id="spanPassword"
+            ><label for="password"><b>Password:</b></label> <input id="inputPassword" type="password"
+          /></span>
+          <span id="spanInvalidMessage">Invalid Username or password.</span>
+          <div>
+            <button class="bc-btn" id="btnSignIn">Sign In</button>
+            <button class="bc-btn" id="getGraphDataButton">SSO Sign In</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ms-welcome__main ms-bgColor-neutralLighter ms-u-fadeIn500">
+        <div id="divFetchTemplate">
+          <button class="button" id="btnFetchTemplate">Fetch Template</button>
+          <div id="myFetchModal" class="fetchModal">
+            <div class="fetchModalContent">
+              <p>
+                If a table exists it overrides saved formulas and existing table data otherwise it fetches fresh data
+                from Blue Cube server, Do you want to continue?
+              </p>
+              <div id="divFetchModalbtn">
+                <button class="bc-btn" id="btnYesFetchMarket">Yes</button>
+                <button class="bc-btn" id="btnCancelFetchMarket">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="divMonitorRange">
+          <div>
+            <button class="button" id="btnPauseResume">Pause</button>
+          </div>
+          <div id="divPushFrequency">
+            <label for="pushFrequency">Push Frequency:</label>
+            <input id="inputPushFrequency" type="number" name="pushFrequency" value="30" min="15" max="3600" required />
+          </div>
+          <span id="spanPushFrequencyMessage">Enter value from 15 to 3600 only</span>
+          <div id="divLastPush">
+            <label for="lastPush">Last Push:</label>
+            <span id="spanLastPush"></span>
+          </div>
+        </div>
+        <div id="myRefreshModal" class="refreshModal">
+          <div class="refreshModalContent">
+            <p>
+              If a table exists it overrides saved formulas and existing table data otherwise it fetches fresh data from
+              Blue Cube server, Do you want to continue?
+            </p>
+            <div id="divRefreshModalbtn">
+              <button class="bc-btn" id="btnYesRefreshMarket">Yes</button>
+              <button class="bc-btn" id="btnCancelRefreshMarket">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <div id="divRefreshMarket" class="ms-welcome__main ms-bgColor-neutralLighter ms-u-fadeIn500">
+          <button class="button" id="btnRefreshMarket">Refresh Market List</button>
+        </div>
+      </div>
+    </main>
+    <footer class="ms-welcome__footer ms-bgColor-neutralLighter ms-u-fadeIn500">
+      <span id="spanFooter"
+        >Intellectual Property Notice: Data loaded into Blue Cube may be visible to other Blue Cube Users within your
+        organization. Please ensure your Blue Cube Users have the appropriate rights to any data (i.e., intellectual
+        property) loaded into Blue Cube before loading such data.
+      </span>
+    </footer>
+  <script src="polyfill.js"></script><script src="taskpane.js"></script><script src="commands.js"></script></body>
+</html>

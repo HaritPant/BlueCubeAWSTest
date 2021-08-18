@@ -1,0 +1,18 @@
+{
+  "workSheetName": "Blue Cube",
+  "clientId": "3ufu4nn0eu2q2hu8l0hflnauas",
+  "email": "tester@rsystems.com",
+  "password": "Rsystems1",
+  "authFlow": "USER_PASSWORD_AUTH",
+  "region": "us-east-2",
+  "tableName": "ExpensesTable",
+  "coIdValue": "04c3bac9-dcbe-4983-94b4-f8a35b9121cd",
+  "acctId": "fa8b9a66-de2a-494a-9df5-783349722a60",
+  "pause": "Pause",
+  "resume": "Resume",
+  "columnRange": "B2:L2",
+  "hideRange": "Z:Z",
+  "hideStoreRange": "Z1:Z1",
+  "fetchAPIURL": "https://y31ogojt82.execute-api.us-east-2.amazonaws.com/Prod/excel?CoId=",
+  "pushAPIURL": "https://y31ogojt82.execute-api.us-east-2.amazonaws.com/Prod/excel?CoId="
+}

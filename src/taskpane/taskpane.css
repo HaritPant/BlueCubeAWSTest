@@ -1,0 +1,215 @@
+/*  ***********************************************************************************************************
+ CONFIDENTIAL
+
+ COPYRIGHT 2018 - 2021
+ Enscape Solutions, LLC DBA BlueCube Energy
+ All Rights Reserved
+
+ NOTICE:  All information contained herein is, and remains the property of Enscape Solutions. 
+ The intellectual and technical concepts contained herein are proprietary to Enscape Solutions
+ and are protected by trade secret or copyright law. Dissemination of this information or
+ reproduction of this material is strictly prohibited unless prior written permission is obtained
+ from Enscape Solutions.
+
+ Included third party assets:
+ Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License.
+ 
+ CONFIDENTIAL
+*********************************************************************************************************** */
+
+html,
+main {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.ms-welcome__main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ms-welcome__main > h2 {
+  text-align: center;
+}
+
+.ms-welcome__features {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.ms-firstrun-instructionstep__header {
+  padding-left: 20px;
+}
+
+.ms-firstrun-instructionstep__welcome-body {
+  padding-left: 20px;
+}
+
+.ms-firstrun-instructionstep__list {
+  padding-left: 20px;
+}
+
+.ms-welcome__features.ms-List .ms-ListItem {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
+  margin-right: 10px;
+}
+
+.ms-welcome__action.ms-Button--hero {
+  margin-top: 30px;
+}
+
+.ms-Button.ms-Button--hero .ms-Button-label {
+  color: #0078d7;
+}
+
+.ms-Button.ms-Button--hero:hover .ms-Button-label,
+.ms-Button.ms-Button--hero:focus .ms-Button-label {
+  color: #005a9e;
+  cursor: pointer;
+}
+
+b {
+  font-weight: bold;
+}
+label {
+  font-size: 16px;
+}
+
+.button {
+  background-color: rgb(39, 168, 39);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  padding: 10px;
+}
+
+#btnPauseResume {
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+#spanPushFrequencyMessage,
+#spanInvalidMessage {
+  color: red;
+  font-size: 12px;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+#spanFooter {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 13px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+}
+
+#spanUsername {
+  margin-top: 15%;
+}
+
+#spanPassword {
+  margin-top: 10%;
+}
+
+#divFetchTemplate {
+  margin-bottom: 200px;
+}
+
+#btnSignIn {
+  margin-top: 20%;
+}
+
+#divRefreshModalbtn {
+  padding-left: 60px;
+}
+
+#btnCancelRefreshMarket {
+  margin-left: 40px;
+}
+
+#divFetchModalbtn {
+  padding-left: 60px;
+}
+
+#btnCancelFetchMarket {
+  margin-left: 40px;
+}
+
+#divPushFrequency,
+#divLastPush {
+  margin-top: 10%;
+}
+
+.bc-btn {
+  background-color: rgb(39, 168, 39);
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+  padding: 10px;
+}
+
+.fetchModal,
+.refreshModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.fetchModalContent,
+.refreshModalContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
